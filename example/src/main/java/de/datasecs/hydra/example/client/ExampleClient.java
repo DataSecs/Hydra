@@ -2,7 +2,6 @@ package de.datasecs.hydra.example.client;
 
 import de.datasecs.hydra.client.Client;
 import de.datasecs.hydra.client.HydraClient;
-import de.datasecs.hydra.example.server.ExampleServerProtocol;
 import de.datasecs.hydra.example.shared.ExamplePacket;
 import de.datasecs.hydra.shared.handler.Session;
 import de.datasecs.hydra.shared.handler.listener.HydraSessionListener;
