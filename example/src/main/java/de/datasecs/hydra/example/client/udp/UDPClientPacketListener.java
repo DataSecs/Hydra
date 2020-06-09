@@ -1,20 +1,20 @@
 package de.datasecs.hydra.example.client.udp;
 
-import de.datasecs.hydra.shared.handler.Session;
-import de.datasecs.hydra.shared.protocol.packets.StandardPacket;
+import de.datasecs.hydra.example.shared.udp.ExampleUDPPacket;
+import de.datasecs.hydra.shared.handler.impl.UDPSession;
 import de.datasecs.hydra.shared.protocol.packets.listener.HydraPacketListener;
 import de.datasecs.hydra.shared.protocol.packets.listener.PacketHandler;
 
 /*
- * Created with <3 by DataSecs on 17.12.19
+ * Created with love by DataSecs on 17.12.19
  */
 public class UdpClientPacketListener implements HydraPacketListener {
 
     @PacketHandler
-    public void onStandardPacket(StandardPacket standardPacket, Session session) {
+    public void onExampleUDPPacket(ExampleUDPPacket exampleUDPPacket, UDPSession session) {
         System.out.println("\n---PACKET-LISTENER OUTPUT---");
 
-        System.out.printf("Received from server using the StandardPacket: %s%nSession: %s", standardPacket, session);
+        System.out.printf("Received from server using the ExampleUDPPacket: %s%nSession: %s", exampleUDPPacket, session);
 
         //session.close();
         //System.out.println("\nSession closed!");
