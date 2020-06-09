@@ -6,10 +6,10 @@ import de.datasecs.hydra.shared.protocol.impl.HydraProtocol;
 /*
  * Created with love by DataSecs on 17.12.19
  */
-public class UdpClientProtocol extends HydraProtocol {
+public class UDPClientProtocol extends HydraProtocol {
 
-    public UdpClientProtocol() {
+    public UDPClientProtocol() {
         registerPacket(ExampleUDPPacket.class);
-        registerListener(new UdpClientPacketListener());
+        registerListener(new UDPClientPacketListener());
     }
 }
