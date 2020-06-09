@@ -1,6 +1,5 @@
 package de.datasecs.hydra.client;
 
-import de.datasecs.hydra.shared.handler.impl.UDPSession;
 import de.datasecs.hydra.shared.handler.listener.HydraSessionListener;
 import de.datasecs.hydra.shared.initializer.HydraChannelInitializer;
 import de.datasecs.hydra.shared.protocol.Protocol;
@@ -13,7 +12,6 @@ import io.netty.channel.epoll.EpollEventLoopGroup;
 import io.netty.channel.epoll.EpollSocketChannel;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
-import io.netty.channel.socket.nio.NioDatagramChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.util.AttributeKey;
 

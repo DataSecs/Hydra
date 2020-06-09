@@ -1,10 +1,8 @@
 package de.datasecs.hydra.example.server.udp;
 
-import de.datasecs.hydra.example.shared.udp.ExampleUDPPacket;
 import de.datasecs.hydra.server.udp.HydraUDPServer;
 import de.datasecs.hydra.server.udp.UDPServer;
 import io.netty.channel.ChannelOption;
-import io.netty.util.internal.SocketUtils;
 
 /*
  * Created with love by DataSecs on 17.12.19
