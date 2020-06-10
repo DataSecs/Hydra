@@ -2,7 +2,7 @@ package de.datasecs.hydra.client;
 
 import de.datasecs.hydra.HydraBasicTest;
 import de.datasecs.hydra.shared.FinishedPacket;
-import de.datasecs.hydra.shared.TestPacket;
+import de.datasecs.hydra.shared.Logger;
 import de.datasecs.hydra.shared.handler.Session;
 import de.datasecs.hydra.shared.protocol.packets.StandardPacket;
 import de.datasecs.hydra.shared.protocol.packets.listener.HydraPacketListener;
@@ -19,7 +19,7 @@ public class TestClientPacketListener implements HydraPacketListener {
     @PacketHandler
     public void onFinishedPacket(FinishedPacket finishedPacket, Session session) {
         Assertions.assertTrue(session.isConnected());
-        System.out.printf("Phase %d done!%n", finishedPacket.getNumber());
+        Logger.logSuccess(String.format("Phase %d done!", finishedPacket.getNumber()));
 
         synchronized (HydraBasicTest.LOCK) {
             HydraBasicTest.phaseFinished = true;
